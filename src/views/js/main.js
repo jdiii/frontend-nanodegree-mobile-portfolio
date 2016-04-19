@@ -548,10 +548,15 @@ window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
 // changed querySelector to getElementById
+// generate only as many pizzas as needed, rather than 200 as originally used
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
-  var s = 256;
-  for (var i = 0; i < 200; i++) {
+  var s = 256; //space between pizza-rows
+
+  //pizza count... basically columns times height instead of 200 always
+  var pizzaCount = (window.innerHeight / (s-1)) * cols;
+
+  for (var i = 0; i < pizzaCount; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
