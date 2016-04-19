@@ -44,7 +44,7 @@ gulp.task('compress-js', ['copy-all'], function() {
 
 gulp.task('compress-imgs', ['copy-all'], function() {
 	return gulp.src(src + '/img/*')
-		.pipe(imagemin({})) //minimize images
+		.pipe(imagemin({progressive: true, optimzationLevel: 6, use: [pngquant()]})) //minimize images
 		.pipe(gulp.dest(dst + 'img/'));
 });
 
