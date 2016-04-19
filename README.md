@@ -22,13 +22,13 @@ Most of the optimizations are made using Gulp tasks. See `gulpfile.js`.
 
 Addtionally:
   * Google Fonts css was added to the style.css file to reduce round-trips
-  * The pizza parlor thumbnail was reduced to a few kb from several megabytes
+  * New pizza parlor thumbnail, reduced to a few kb from several megabytes
+  * Added media attributes to `style` tags
+  * Added 'async' attribute to JS in header
+  * Removed Google Analytics to reduce round-trips and blocking JS
 
 ### Pizza Website
 Optimizations were made to `views/js/main.js`.
-
-#### Images
-Added a miniturized version of pizza parlor thumbnail.
 
 #### Function changeSliderLabel()
 Replaced `querySelector()` with `getElementById()`
