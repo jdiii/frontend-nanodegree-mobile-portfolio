@@ -40,3 +40,7 @@ Replace `querySelector()` with `getElementById()`
 #### Function updatePositions()
   * Use `getElementsByClassName()` in place of `querySelectorAll()`
   * Factor `document.body.scrollTop` out of `for` loop to avoids lots of style calculations
+  * Factor `phase` variable out of main loop, calculating the phases once instead of every iteration
+
+#### Event listener 'DOMContentLoaded'
+Use math to generate the minimum number of background-pizzas necessary, rather than always generating 200.
