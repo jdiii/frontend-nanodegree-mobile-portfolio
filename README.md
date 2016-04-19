@@ -1,5 +1,5 @@
-# Portfolio Optimizing
-Project optimizes performance on a mobile portfolio and a fake pizza parlor website.
+# Portfolio Optimization
+Project optimizes CRP performance of a mobile portfolio and a fake pizza parlor website.
 
 ## Getting Started
   1. `git clone` this repository to your machine
@@ -31,13 +31,13 @@ Addtionally:
 Optimizations were made to `views/js/main.js`.
 
 #### Function changeSliderLabel()
-Replaced `querySelector()` with `getElementById()`
+Replace `querySelector()` with `getElementById()`
 
 #### Function changePizzaSizes()
-  * Used `switch` statement and percentages instead of `determineDx()`
-  * Removed multiple `querySelectorAll()` statements from `for` loop
+  * Calculate image width with a single `switch` statement instead of calling `determineDx()` repeatedly in the for loop
+  * Remove multiple `querySelectorAll()` statements from `for` loop
   * Use `getElementsByClassName()` in place of `querySelectorAll()`
 
 #### Function updatePositions()
   * Use `getElementsByClassName()` in place of `querySelectorAll()`
-  * Factor `document.body.scrollTop` out of `for` loop to avoids lots of styles calculations
+  * Factor `document.body.scrollTop` out of `for` loop to avoids lots of style calculations
