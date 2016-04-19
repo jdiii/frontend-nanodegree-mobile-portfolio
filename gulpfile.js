@@ -4,7 +4,6 @@ var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
-var gzip = require('gulp-gzip');
 var fs = require('fs');
 var replace = require('gulp-replace');
 
