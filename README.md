@@ -16,7 +16,6 @@ Most of the optimizations are made using Gulp tasks. See `gulpfile.js`.
   * `copy-all`: copies the entire contents of `src` to `dst`
   * `minify-css`: removes whitespace and linebeaks from css
   * `minify-html-root`: inlines minified CSS in a `<style>` tag in HTML files and minifies HTML in the root folder
-  * `minify-html-views`: minifies HTML in the `/views` folder
   * `compress-js`: minifies .js files
   * `compress-imgs`: optimizes image files in `/img/`
 
